@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(0, 60, 255);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white; 
+    background-color: rgb(231, 180, 84);
+}
+
+h2 {
+    color: rgb(212, 0, 0);
+}
+
+p {
+    color: rgb(0, 0, 208);
+}
+
+div {
+    text-align: right;
+}
