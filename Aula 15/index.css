@@ -1,0 +1,26 @@
+.a{
+background-color: lightblue;
+border: 1px solid black;
+text-align: center;
+}
+
+.c {
+border: 1px solid black;
+}
+
+
+
+#b{
+background-color: lightblue;
+border: 1px solid black;
+text-align: center;
+height: 200px;
+width: 200px;
+display: inline-block;
+}
+
+
+#b:hover {
+background-color: lightgreen;
+font-weight: bold;
+}
