@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/JavaScript">
+        document.writeln("Olá, meu código JavaScript! Usando o Document writeln")
+    </script>
+    <h1>Olá Mundo, JavaScript</h1>
+    <p></p>
+    <script>
+        document.writeln("Olá, meu código JavaScript! Usando o Documento Wrriteln pela segunda vez")
+
+        window.alert("Olá, esse é meu código JavaScript!")
+    </script>
+
+    <hr>
+    <div>
+        <div id="resposta"> </div>
+        <p>Teste</p>
+    </div>
+
+
+    <script>
+        document.getElementById("resposta").innerHTML = "Esta é a resposta via JavaScript"
+
+        var nome = /*window.prompt("Insira os dados do seu cartao")*/
+
+        document.getElementById("resposta").innerHTML = "nome"
+    </script>
+
+<hr>
+
+
+<div style="border-style: 3px solid">
+    <input id="login" type="text" size="60">
+    <button onclick="validaLogin()">Valida</button>
+</div>
+
+<script>
+function validaLogin(){
+    var login="";
+    login = document.getElementById("login").value;
+    if (login == "Amilton") {
+    window.alert("Seja bem vindo bonitão")
+
+    }
+    else {
+        window.alert("Tu não é o bonitão")
+    }
+}
+</script>
+<hr>
+
+<div style="border-style: 3px solid">
+    <input id="idade" type="text" size="60">
+    <button onclick="inseriridade()">Inserir Idade</button>
+</div>
+
+<script>
+function inseriridade(){
+    var idade="";
+    idade = document.getElementById("idade").value;
+    if (idade >= "60") {
+    window.alert("Idoso")
+
+    }
+    else {
+        window.alert("Novo")
+    }
+}
+
+
+
+
+</script>
+
+
+</body>
+
+</html>
