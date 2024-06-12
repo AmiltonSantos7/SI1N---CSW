@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Investimentos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header style="background-image: url('images/header-background.jpg');">
+        <nav>
+            <img src="images/logo.png" alt="Logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="simulador.html">Simulador</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Simulador de Investimentos</h1>
+    </header>
+
+    <main>
+        <!-- (0,5 pontos): Inclusão dos elementos de entrada -->
+        <form id="simulador-form">
+            <label for="valor">Valor a investir:</label>
+            <input type="number" id="valor" required>
+            
+            <label for="prazo">Prazo investimento (meses):</label>
+            <input type="number" id="prazo" required>
+            
+            <label for="plano">Selecione o Plano:</label>
+            <select id="plano" required>
+                <option value="0.02">Tesouro Direto (2.00%)</option>
+                <option value="0.05">Tesouro IPCA+ (5.00%)</option>
+                <option value="0.06">CDB (6.00%)</option>
+                <option value="0.08">Ações Petrobras (8.00%)</option>
+                <option value="0.07">Fundos Imobiliários (7.00%)</option>
+            </select>
+            
+            <!-- (0,5 pontos): Botão voltar -->
+            <button type="button" id="voltar">Voltar</button>
+            <!-- (0,3 pontos): Botão Simular -->
+            <button type="button" id="simular">Simular</button>
+        </form>
+        
+        <p id="resultado">Retorno do investimento: </p>
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
