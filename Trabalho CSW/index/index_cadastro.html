@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="style.css">
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instituição</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                background-color: #ffffff;
+            }
+
+            .topbar {
+                background-color: #0d47a1;
+                color: white;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .topbar a {
+                color: #fff;
+            }
+
+            .topbar span {
+                font-size: 1.5em;
+            }
+            .topbar .menu {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+
+            .topbar .menu i {
+                cursor: pointer;
+            }
+
+            .main {
+                display: flex;
+                flex-grow: 1;
+            }
+
+            .sidebar {
+                width: 600px;
+                background-color: #fff;
+                padding: 10px;
+                box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: column;
+                height: calc(100vh - 72px);
+                overflow-y: auto;
+            }
+
+            .sidebar input {
+                width: calc(100% - 40px);
+                padding: 10px;
+                margin: 10px 10px 10px 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .sidebar button {
+                background-color: #0d47a1;
+                color: white;
+                border: none;
+                padding: 10px;
+                margin: 10px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+            .sidebar button:hover {
+                background-color: #0d47a1;
+            }
+
+            .sidebar ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                flex-grow: 1;
+                overflow-y: auto;
+            }
+
+            .sidebar ul li {
+                padding: 10px;
+                border-bottom: 1px solid #ccc;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+            }
+
+            .sidebar ul li i {
+                margin-right: 10px;
+            }
+
+            .sidebar ul li.checked {
+                background-color: #0d47a1;
+                color: white;
+            }
+
+            .content {
+                flex-grow: 1;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .content h1 {
+                color: #f0b43a;
+            }
+
+            .content .sections {
+                display: flex;
+                gap: 20px;
+                flex-grow: 1;
+            }
+
+            .section {
+                height: 400px;
+                flex: 1;
+                padding: 20px;
+                background-color: #f2f2f2;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .section h2 {
+                color: #f0b43a;
+            }
+
+            .footer {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 20px;
+            }
+
+            .footer button {
+                background-color: #0d47a1;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .footer button:hover {
+                background-color: #0d47a1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="topbar">
+            <div class="menu">
+                <a href="../index/index_cadastro.html"><span ><strong>Cadastros</strong></span></a>
+                <a href="../index/index_relatorio.html"><span><strong>Relatórios</strong></span></a>
+            </div>
+            <div class="menu">
+                <img src="../image/bell.png" alt="Notificação">
+                <img src="../image/message.png" alt="Mensagens">
+                <img src="../image/person.png" alt="Usuario">
+            </div>
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <input type="text" placeholder="Pesquisar...">
+                <button><i class="fa fa-plus"></i></button>
+                <ul>
+                    <li class="checked">Instituição 08</li>
+                    <li>Instituição 07</li>
+                    <li>Instituição 06</li>
+                    <li>Instituição 05</li>
+                    <li>Instituição 04</li>
+                    <li>Instituição 03</li>
+                    <li>Instituição 02</li>
+                    <li>Instituição 01</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1>Instituição 08</h1>
+                <div class="sections">
+                    <div class="section">
+                        <h2>Loren Ipsum dolor:</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="section">
+                        <h2>Loren Ipsum dolor:</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="section">
+                        <h2>Loren Ipsum dolor:</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <button><strong>Aceitar</strong></button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>
+
+
+
+</body>
+
+</html>

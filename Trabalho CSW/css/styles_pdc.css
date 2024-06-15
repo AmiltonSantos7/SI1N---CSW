@@ -1,0 +1,163 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #0d47a1;;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    margin-left: 15px;
+    display: flex;
+    gap: 30px;
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .icons {
+    display: flex;
+}
+
+header .icons i {
+    margin-left: 15px;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+aside {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.months-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.months-list li {
+    margin: 10px 0;
+    color: #666;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.content h1 {
+    font-size: 36px;
+    color: #333;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.content form {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.content form input,
+.content form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.content form .file-upload {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.content form .file-upload .file-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #0d47a1;;
+    text-decoration: underline;
+}
+
+.content form .file-upload .file-label i {
+    margin-right: 5px;
+}
+
+.content form button {
+    padding: 10px;
+    background-color: #0d47a1;;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.content form button:hover {
+    background-color: #0d47a1;;
+    border-radius: 5px;
+}

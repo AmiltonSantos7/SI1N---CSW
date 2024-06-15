@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--<link rel="stylesheet" href="styles_login1.css">-->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0d47a1;
+        }
+
+        .container {
+            margin-top: 75px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-section img {
+            width: 700px;
+        }
+
+        .login-section {
+            padding: 40px;
+        }
+
+        .login-section h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .login-section label {
+            display: block;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+
+        .login-section input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .forgot-password {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            color: #3e2723;
+            text-decoration: none;
+        }
+
+        .buttons {
+            margin-top: 60px;
+            display: grid;
+            place-items: center;
+            gap: 10px;
+
+        }
+
+        .enter-button,
+        .register-button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .enter-button {
+            background-color: #0d47a1;
+            color: #fff;
+        }
+
+        .register-button {
+            background-color: #ffb300;
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-section,
+            .login-section {
+                width: 100%;
+            }
+
+            .login-section {
+                padding: 20px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .enter-button,
+            .register-button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="image-section">
+                <img src="./image/fortes.png" alt="Faiada da Fortes">
+            </div>
+            <div class="login-section">
+                <h1>Login</h1>
+                <form id="loginForm">
+                    <label for="login">Login</label>
+                    <input type="text" id="login" name="login">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha">
+                    <a href="#" class="forgot-password">Esqueci a senha</a>
+                    <div class="buttons">
+                        <button type="button" class="enter-button" onclick="verifLogin()">Entrar</button>
+                        <button type="button" class="register-button">Cadastre-se</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="./script/login.js"></script>
+    </main>
+</body>
+
+</html>

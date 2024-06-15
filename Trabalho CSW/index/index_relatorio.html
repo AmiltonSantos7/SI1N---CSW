@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_relatorio.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="geral">
+        <div class="containerHeader">
+            <header>
+                <div class="links">
+                    <a href="../FortesFabricio/index_lp.html">Home</a>
+                    <a href="../index/index_cadastro.html">Cadastros</a>
+                    <a href="../index/index_relatorio.html">Relatórios</a>
+                </div>  
+                <div class="icons">
+                    <input type="image" src="../image/bell.png" alt="Notificações">
+                    <input type="image" src="../image/message.png" alt="Mensagens">
+                    <input type="image" src="../image/person.png" alt="Perfil">
+                </div>
+            </header>
+        </div>
+        <div class="info">
+            <div class="sidebar"> 
+                <div class="search">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button>+</button>
+                </div>
+                <div class="filters">
+                    <label for="priority">Prioridade</label>
+                    <select id="priority">
+                        <option value="high">Alta</option>
+                        <option value="medium">Média</option>
+                        <option value="low">Baixa</option>
+                    </select>
+                    <label for="min-value">Valor fornecido</label>
+                    <div class="value-range">
+                        <input type="number" id="min-value" placeholder="R$2 min">
+                        <input type="number" id="max-value" placeholder="R$10 max">
+                    </div>
+                    <label>Status da Instituição</label>
+                    <div class="status">
+                        <input type="checkbox" id="active" checked>
+                        <label for="active">Ativa</label>
+                        <input type="checkbox" id="inactive">
+                        <label for="inactive">Inativa</label>
+                    </div>
+                    <label for="date-start">DE</label>
+                    <input type="date" id="date-start">
+                    <label for="date-end">ATÉ</label>
+                    <input type="date" id="date-end">
+                </div>
+            </div>
+            <div class="content">
+                <div class="main-content">
+                    <div class="institution-info">
+                        <h2>Instituição 08</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>MÊS</th>
+                                <th>TIPO</th>
+                                <th>Valor</th>
+                            </tr>
+                            <tr>
+                                <td>JANEIRO</td>
+                                <td>ALIMENTO</td>
+                                <td>R$15,000</td>
+                            </tr>
+                            <tr>
+                                <td>FEVEREIRO</td>
+                                <td>HIGIENE</td>
+                                <td>R$16,000</td>
+                            </tr>
+                            <tr>
+                                <td>MARÇO</td>
+                                <td>ROUPA</td>
+                                <td>R$10,000</td>
+                            </tr>
+                            <tr>
+                                <td>ABRIL</td>
+                                <td>ALIMENTO</td>
+                                <td>R$13,000</td>
+                            </tr>
+                            <tr>
+                                <td>MAIO</td>
+                                <td>ROUPA</td>
+                                <td>R$4,000</td>
+                            </tr>
+                            <tr>
+                                <td>TOTAL</td>
+                                <td></td>
+                                <td>R$58,000</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="actions">
+                        <button>Compartilhar</button>
+                        <button>Imprimir</button>
+                    </div>
+                </div>
+                <div class="chat">
+                    <img src="../image/grafico.png" alt="Chat">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

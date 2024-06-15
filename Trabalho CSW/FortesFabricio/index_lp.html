@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submissão de Editais</title>
+    <link rel="stylesheet" href="./style_lp.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="links">
+                <a href="../FortesFabricio/index_lp.html">Home</a>
+                <a href="../index/index_pdc.html">Prestação de contas</a>
+                <a href="../index/index_solicitacao.html">Solicitações</a>
+            </div>
+            <div class="icons">
+                <input type="image" src="bell.png">
+                <input type="image" src="message.png">
+                <input type="image" src="person.png" ac>
+            </div>
+        </header>
+        <div class="section video-section">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dMacdG2I5q0?si=RESbkyh8UZipvmez"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="description-container">
+                <h2>Sobre a Empresa</h2>
+                <p>Descrição sobre a empresa. Aqui pode-se detalhar a missão, visão e valores da empresa, bem como
+                    informações relevantes sobre a atuação da mesma no mercado.</p>
+                <button>Saiba mais</button>
+            </div>
+        </div>
+        <div class="section calendar-section">
+            <div class="description-container">
+                <h2>Próximos editais</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui delectus totam, vitae repellendus dolor
+                    aut possimus illo. Quisquam aut quibusdam reiciendis voluptates magnam
+                    laudantium nobis sapiente accusantium voluptatem consequatur! Aliquid.</p>
+            </div>
+            <div class="calendar-container">
+                <iframe
+                    src="https://calendar.google.com/calendar/embed?src=pt-br.brazilian%23holiday%40group.v.calendar.google.com&ctz=America%2FSao_Paulo"
+                    style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+        <div class="carrossel">
+            <div class="carrossel-container">
+                <div class="carrossel-item">
+                    <h2>Edital 1</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis ipsum eum optio labore odit
+                        recusandae deleniti quas nesciunt magnam,
+                        rerum eveniet doloremque explicabo corrupti eos vero aliquam obcaecati consequatur quidem!</p>
+                </div>
+                <div class="carrossel-item">
+                    <h2>Edital 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed molestiae quas aut, adipisci
+                        assumenda voluptatem consequatur impedit minus,
+                        culpa eligendi accusamus excepturi incidunt esse id et quos optio dolore a.</p>
+                </div>
+                <div class="carrossel-item">
+                    <h2>Edital 3</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque maiores, veniam laborum ab
+                        corrupti ullam reiciendis! Animi dolorum, perferendis doloremque inventore a nihil tenetur.
+                        Consequatur quas cumque distinctio amet quisquam!</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="carrossel-button" id="prev">Anterior</button>
+                <button class="carrossel-button" id="next">Próximo</button>
+                <button class="carrossel-button" id="next">Aderir ao edital</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        const carrosselContainer = document.querySelector('.carrossel-container');
+        const carrosselItems = document.querySelectorAll('.carrossel-item');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        let currentIndex = 0;
+
+        function updateCarrossel() {
+            const offset = -currentIndex * 100;
+            carrosselContainer.style.transform = `translateX(${offset}%)`;
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : carrosselItems.length - 1;
+            updateCarrossel();
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex < carrosselItems.length - 1) ? currentIndex + 1 : 0;
+            updateCarrossel();
+        });
+    </script>
+</body>
+
+</html>
